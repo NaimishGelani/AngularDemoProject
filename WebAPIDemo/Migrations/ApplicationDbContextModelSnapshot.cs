@@ -48,7 +48,6 @@ namespace WebAPIDemo.Migrations
                         .HasColumnType("character varying(10)");
 
                     b.Property<int>("Salary")
-                        .HasMaxLength(6)
                         .HasColumnType("integer");
 
                     b.HasKey("Id");

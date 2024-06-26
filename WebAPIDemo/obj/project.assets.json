@@ -1485,26 +1485,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ggddf\\.nuget\\packages\\": {}
+    "C:\\Users\\pca63\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ggddf\\OneDrive\\Desktop\\Angular Demo\\WebAPIDemo\\WebAPIDemo.csproj",
+      "projectUniqueName": "C:\\Users\\pca63\\Desktop\\AngularDemoProject\\WebAPIDemo\\WebAPIDemo.csproj",
       "projectName": "WebAPIDemo",
-      "projectPath": "C:\\Users\\ggddf\\OneDrive\\Desktop\\Angular Demo\\WebAPIDemo\\WebAPIDemo.csproj",
-      "packagesPath": "C:\\Users\\ggddf\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ggddf\\OneDrive\\Desktop\\Angular Demo\\WebAPIDemo\\obj\\",
+      "projectPath": "C:\\Users\\pca63\\Desktop\\AngularDemoProject\\WebAPIDemo\\WebAPIDemo.csproj",
+      "packagesPath": "C:\\Users\\pca63\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\pca63\\Desktop\\AngularDemoProject\\WebAPIDemo\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ggddf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pca63\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

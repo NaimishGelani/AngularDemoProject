@@ -11,8 +11,8 @@ using WebAPIDemo.Data;
 namespace WebAPIDemo.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240616095110_Add Primry Key")]
-    partial class AddPrimryKey
+    [Migration("20240617081657_addDataBase")]
+    partial class addDataBase
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -37,15 +37,18 @@ namespace WebAPIDemo.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(10)
+                        .HasColumnType("character varying(10)");
 
                     b.Property<int>("Salary")
                         .HasColumnType("integer");

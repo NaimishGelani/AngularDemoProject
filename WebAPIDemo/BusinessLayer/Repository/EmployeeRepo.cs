@@ -14,15 +14,22 @@ namespace WebAPIDemo.BusinessLayer.Repository
             _applicationDbContext = applicationDbContext;
         }
 
-        public async Task AddEmployee(Employee employee)
+        public async Task AddEmployee(EmployeeDTO employee)
         {
-            Employee? emp = _applicationDbContext.Employees.FirstOrDefault(x => x.Id == employee.Id);
-            if (emp == null)
+            if (employee != null)
             {
-                await _applicationDbContext.Set<Employee>().AddAsync(employee);
+                Employee employee1 = new()
+                {
+                    Name = employee.Name,
+                    Age = employee.Age,
+                    Salary = employee.Salary,
+                    PhoneNumber = employee.PhoneNumber,
+                    Email = employee.Email,
+
+                };
+                _applicationDbContext.Employees.Add(employee1);
                 await _applicationDbContext.SaveChangesAsync();
             }
-
         }
 
         public Task<List<Employee>> GetEmployeeList()
@@ -49,6 +56,7 @@ namespace WebAPIDemo.BusinessLayer.Repository
             emp.Age = employee.Age;
             await _applicationDbContext.SaveChangesAsync();
         }
+
         public async Task DeleteEmployee(int id)
         {
             Employee? emp = _applicationDbContext.Employees.FirstOrDefault(x => x.Id == id);

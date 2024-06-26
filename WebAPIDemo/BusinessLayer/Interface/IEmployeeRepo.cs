@@ -4,7 +4,7 @@ namespace WebAPIDemo.BusinessLayer.Interface
 {
     public interface IEmployeeRepo
     {
-        Task AddEmployee(Employee employee);
+        Task AddEmployee(EmployeeDTO employee);
 
         Task<List<Employee>> GetEmployeeList();
 

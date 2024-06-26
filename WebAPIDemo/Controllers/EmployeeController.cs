@@ -15,7 +15,7 @@ namespace WebAPIDemo.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> AddEmployee([FromBody] Employee employeeModel)
+        public async Task<ActionResult> AddEmployee([FromBody] EmployeeDTO employeeModel)
         {
             await _employeeRepo.AddEmployee(employeeModel);
             return Ok();
